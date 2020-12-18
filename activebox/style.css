@@ -1,0 +1,144 @@
+:root{
+    --primary:#fff;
+    --secondary:#ee5253;
+    --third:crimson;
+
+}
+.smooth{
+    overscroll-behavior-y: mandatory;
+    scroll-behavior: smooth;
+}
+section,footer{
+    padding: 100px 0;
+}
+main p{
+    color: #f7f7f7;
+}
+.btn{
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 10px 25px;
+    background: var(--secondary);
+    color: var(--primary);
+}
+header{
+    width: 100%;
+    background: rgba(80, 71, 199, 0.2);
+}
+nav{
+    border-bottom: 1px solid silver;
+    color: var(--primary);
+}
+nav a{
+    color: var(--primary);
+}
+.brand{
+    color: #fff;
+    font-weight: 300;
+}
+.brand span{
+    opacity: .6;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    color: var(--primary);
+    background:linear-gradient(rgba(80, 71, 199, 0.8),rgba(60, 36, 146, 0.8)),url(https://picsum.photos/id/1033/1200/900);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+#features .item i{
+    color: var(--secondary);
+    font-size: 3.9rem;
+    margin: 1rem;
+}
+#features .item h4{
+    font-weight: 600;
+}
+
+
+
+/*work*/
+
+.work .item a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    color: var(--secondary);
+    display: none;
+    transition:all .5s ease;
+}
+
+.work .item:hover a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+/*team*/
+.dflex {
+    display: flex;
+}
+.dflex a{
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+.title{
+    font-weight: normal;
+    color: var(--secondary);
+}
+#testimonial{
+    background:rgba(60, 36, 146, 0.8);
+}
+#testimonial .grid-2 .part{
+    width: 100%;
+    height: auto;
+}
+#testimonial .part blockquote{
+    color: var(--primary);
+    padding: 20px;
+}
+#testimonial .part blockquote span{
+    font-size: 4rem;
+}
+
+
+#download {
+    padding: 50px 0;
+}
+#download h1{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.52em;
+}
+
+footer{
+    background: #222222;
+    color: #fff;
+}
+footer p{
+    color: rgb(201, 198, 198);
+}
+.attribution p{
+    padding: 10px 0 0 0;
+    background: #333;
+    color: var(--primary);
+}
+footer .item a{
+    color: var(--primary);
+    margin: 10px ;
+    font-size: 1.3rem;
+}
+@media (max-width:740px){
+    main h1{
+        font-size: 1.2rem;
+    }
+    .menu{
+        display: none!important;
+    }
+}
